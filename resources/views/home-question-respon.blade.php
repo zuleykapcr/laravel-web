@@ -7,11 +7,13 @@
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
+
     <style>
         body {
             background-color: #f4f6f9;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+
 
         .thankyou-container {
             max-width: 700px;
@@ -23,15 +25,18 @@
             text-align: center;
         }
 
+
         .thankyou-container h2 {
             color: #3E97FF;
             font-weight: bold;
         }
 
+
         .email-info {
             color: #555;
             font-style: italic;
         }
+
 
         blockquote {
             font-size: 1.1rem;
@@ -42,7 +47,6 @@
             padding: 15px 20px;
             border-radius: 6px;
         }
-
         .btn-primary {
             background-color: #3E97FF;
             border: none;
@@ -50,23 +54,24 @@
     </style>
 </head>
 <body>
-
     <div class="thankyou-container">
-        <h2>Terima Kasih, {{$nama}}! 🎉</h2>
-        <p class="lead">Pertanyaan Anda telah berhasil dikirim.</p>
+       <h2>Terima Kasih, {{session('nama') }}! 🎉</h2>
+    <p class="lead">Pertanyaan Anda telah berhasil dikirim.</p>
+    <blockquote>
+    <strong>Pertanyaan Anda:</strong><br>
+    "{{session('pertanyaan') }}"
+    </blockquote>
 
-        <blockquote>
-            <strong>Pertanyaan Anda:</strong><br>
-            "{{$pertanyaan}}"
-        </blockquote>
 
-        <p class="email-info mt-4">
-            Pertanyaan Anda akan segera kami tanggapi dan balas melalui email <strong>{{$email}}</strong>.<br><br>
-            Mohon cek kotak masuk atau folder spam Anda secara berkala.
-        </p>
+    <p class="email-info mt-4">
+    Pertanyaan Anda akan segera kami tanggapi dan balas melalui email <strong>{{session('email') }}</strong>.<br><br>
+    Mohon cek kotak masuk atau folder spam Anda secara berkala.
+    </p>
+
 
         <a href="{{ url('/') }}" class="btn btn-primary mt-4">Kembali ke Beranda</a>
     </div>
+
 
 </body>
 </html>
