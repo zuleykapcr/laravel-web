@@ -27,28 +27,25 @@
     <meta name="author" content="Themesberg">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="120x120" href="../../assets/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../../assets/img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="../../assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
+<link rel="shortcut icon" href="{{ asset('assets-admin/img/favicon/favicon.ico') }}">
+<link rel="apple-touch-icon" sizes="120x120" href="{{ asset('assets-admin/img/favicon/apple-touch-icon.png') }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets-admin/img/favicon/favicon-32x32.png') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets-admin/img/favicon/favicon-16x16.png') }}">
+<link rel="manifest" href="{{ asset('assets-admin/img/favicon/site.webmanifest') }}">
+<link rel="mask-icon" href="{{ asset('assets-admin/img/favicon/safari-pinned-tab.svg') }}" color="#ffffff">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
 
-    <!-- Volt CSS -->
-    <link href="{{ asset('assets-admin/css/volt.css') }}" rel="stylesheet">
+<!-- Volt CSS -->
+<link type="text/css" href="{{ asset('assets-admin/css/volt.css') }}" rel="stylesheet">
 
 </head>
 
 <body>
     <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
         <a class="navbar-brand me-lg-5" href="../../index.html">
-
-
-            <img class="navbar-brand-dark" src="{{ asset('assets-admin/img/brand/light.svg') }}" alt="Volt logo" />
-            <img class="navbar-brand-light" src="{{ asset('assets-admin/img/brand/dark.svg') }}" alt="Volt logo" />
-
-
+            <img class="navbar-brand-dark" src="{{asset('assets-admin/img/brand/light.svg') }}" alt="Volt logo" />
+            <img class="navbar-brand-light" src="{{asset('assets-admin/img/brand/dark.svg') }}" alt="Volt logo" />
         </a>
         <div class="d-flex align-items-center">
             <button class="navbar-toggler d-lg-none collapsed" type="button" data-bs-toggle="collapse"
@@ -59,23 +56,18 @@
         </div>
     </nav>
 
-    <nav id="sidebarMenu" class="sidebar d-lg-block bg-gray-800 text-white collapse" data-simplebar>
+        <nav id="sidebarMenu" class="sidebar d-lg-block bg-gray-800 text-white collapse" data-simplebar>
         <div class="sidebar-inner px-4 pt-3">
-            <div
-                class="user-card d-flex d-md-none align-items-center justify-content-between justify-content-md-center pb-4">
+            <div class="user-card d-flex d-md-none align-items-center justify-content-between justify-content-md-center pb-4">
                 <div class="d-flex align-items-center">
                     <div class="avatar-lg me-4">
-                        <img src="{{ asset('assets-admin/img/team/profile-picture-3.jpg') }}"
-                            class="card-img-top rounded-circle border-white" alt="Bonnie Green">
+                        <img src="{{ asset('assets-admin/img/team/profile-picture-3.jpg')}}" class="card-img-top rounded-circle border-white" alt="Bonnie Green">
                     </div>
                     <div class="d-block">
                         <h2 class="h5 mb-3">Hi, Jane</h2>
-                        <a href="../../pages/examples/sign-in.html"
-                            class="btn btn-secondary btn-sm d-inline-flex align-items-center">
-                            <svg class="icon icon-xxs me-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
+                        <a href="../../pages/examples/sign-in.html" class="btn btn-secondary btn-sm d-inline-flex align-items-center">
+                            <svg class="icon icon-xxs me-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
                                 </path>
                             </svg>
                             Sign Out
@@ -83,13 +75,9 @@
                     </div>
                 </div>
                 <div class="collapse-close d-md-none">
-                    <a href="#sidebarMenu" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
-                        aria-controls="sidebarMenu" aria-expanded="true" aria-label="Toggle navigation">
-                        <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                clip-rule="evenodd"></path>
+                    <a href="#sidebarMenu" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="true" aria-label="Toggle navigation">
+                        <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                         </svg>
                     </a>
                 </div>
@@ -98,8 +86,7 @@
                 <li class="nav-item">
                     <a href="../../index.html" class="nav-link d-flex align-items-center">
                         <span class="sidebar-icon">
-                            <img src="{{ asset('assets-admin/img/brand/light.svg') }}" height="20" width="20"
-                                alt="Volt Logo">
+                            <img src="{{ asset('assets-admin/img/brand/light.svg')}}" height="20" width="20" alt="Volt Logo">
                         </span>
                         <span class="mt-1 ms-1 sidebar-text">Volt Overview</span>
                     </a>
@@ -107,8 +94,7 @@
                 <li class="nav-item  active ">
                     <a href="{{ route('dashboard') }}" class="nav-link">
                         <span class="sidebar-icon">
-                            <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
                                 <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
                             </svg>
@@ -116,38 +102,29 @@
                         <span class="sidebar-text">Dashboard</span>
                     </a>
                 </li>
-
-                <li class="nav-item  active ">
-   <a href="{{route('pelanggan.create')}}" class="nav-link">
-       <span class="sidebar-icon">
-           <svg class="icon icon-xs me-2" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-               <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"></path>
-           </svg>
-       </span>
-       <span class="sidebar-text">Pelanggan</span>
-   </a>
-</li>
-
+                    <li class="nav-item  active ">
+            <a href="{{ route('pelanggan.index') }}" class="nav-link">
+                <span class="sidebar-icon">
+                    <svg class="icon icon-xs me-2" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"></path>
+                    </svg>
+                </span>
+                <span class="sidebar-text">Pelanggan</span>
+            </a>
+        </li>
                 <li class="nav-item">
-                    <span class="nav-link  collapsed  d-flex justify-content-between align-items-center"
-                        data-bs-toggle="collapse" data-bs-target="#submenu-app">
+                    <span class="nav-link  collapsed  d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#submenu-app">
                         <span>
                             <span class="sidebar-icon">
-                                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z"
-                                        clip-rule="evenodd"></path>
+                                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z" clip-rule="evenodd"></path>
                                 </svg>
                             </span>
                             <span class="sidebar-text">Tables</span>
                         </span>
                         <span class="link-arrow">
-                            <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                                    clip-rule="evenodd"></path>
+                            <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
                             </svg>
                         </span>
                     </span>
@@ -164,29 +141,20 @@
 
                 <li role="separator" class="dropdown-divider mt-4 mb-3 border-gray-700"></li>
                 <li class="nav-item">
-                    <a href="https://themesberg.com/docs/volt-bootstrap-5-dashboard/getting-started/quick-start/"
-                        target="_blank" class="nav-link d-flex align-items-center">
+                    <a href="https://themesberg.com/docs/volt-bootstrap-5-dashboard/getting-started/quick-start/" target="_blank" class="nav-link d-flex align-items-center">
                         <span class="sidebar-icon">
-                            <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-                                    clip-rule="evenodd"></path>
+                            <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
                             </svg>
                         </span>
-                        <span class="sidebar-text">Documentation <span
-                                class="badge badge-sm bg-secondary ms-1 text-gray-800">v1.4</span></span>
+                        <span class="sidebar-text">Documentation <span class="badge badge-sm bg-secondary ms-1 text-gray-800">v1.4</span></span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="../../pages/upgrade-to-pro.html"
-                        class="btn btn-secondary d-flex align-items-center justify-content-center btn-upgrade-pro">
+                    <a href="../../pages/upgrade-to-pro.html" class="btn btn-secondary d-flex align-items-center justify-content-center btn-upgrade-pro">
                         <span class="sidebar-icon d-inline-flex align-items-center justify-content-center">
-                            <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
-                                    clip-rule="evenodd"></path>
+                            <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"></path>
                             </svg>
                         </span>
                         <span>Upgrade to Pro</span>
@@ -214,8 +182,8 @@
                                             clip-rule="evenodd"></path>
                                     </svg>
                                 </span>
-                                <input type="text" class="form-control" id="topbarInputIconLeft"
-                                    placeholder="Search" aria-label="Search" aria-describedby="topbar-addon">
+                                <input type="text" class="form-control" id="topbarInputIconLeft" placeholder="Search"
+                                    aria-label="Search" aria-describedby="topbar-addon">
                             </div>
                         </form>
                         <!-- / Search form -->
@@ -224,8 +192,8 @@
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item dropdown">
                             <a class="nav-link text-dark notification-bell unread dropdown-toggle"
-                                data-unread-notifications="true" href="#" role="button"
-                                data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                data-unread-notifications="true" href="#" role="button" data-bs-toggle="dropdown"
+                                data-bs-display="static" aria-expanded="false">
                                 <svg class="icon icon-sm text-gray-900" fill="currentColor" viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -242,7 +210,7 @@
                                             <div class="col-auto">
                                                 <!-- Avatar -->
                                                 <img alt="Image placeholder"
-                                                    src="../../assets/img/team/profile-picture-1.jpg"
+                                                    src="../../assets-admin/img/team/profile-picture-1.jpg"
                                                     class="avatar-md rounded">
                                             </div>
                                             <div class="col ps-0 ms-2">
@@ -254,8 +222,7 @@
                                                         <small class="text-danger">a few moments ago</small>
                                                     </div>
                                                 </div>
-                                                <p class="font-small mt-1 mb-0">Added you to an event "Project
-                                                    stand-up"
+                                                <p class="font-small mt-1 mb-0">Added you to an event "Project stand-up"
                                                     tomorrow at 12:30 AM.
                                                 </p>
                                             </div>
@@ -266,7 +233,7 @@
                                             <div class="col-auto">
                                                 <!-- Avatar -->
                                                 <img alt="Image placeholder"
-                                                    src="../../assets/img/team/profile-picture-2.jpg"
+                                                    src="../../assets-admin/img-admin/team/profile-picture-2.jpg"
                                                     class="avatar-md rounded">
                                             </div>
                                             <div class="col ps-0 ms-2">
@@ -278,8 +245,7 @@
                                                         <small class="text-danger">2 hrs ago</small>
                                                     </div>
                                                 </div>
-                                                <p class="font-small mt-1 mb-0">You've been assigned a task for
-                                                    "Awesome
+                                                <p class="font-small mt-1 mb-0">You've been assigned a task for "Awesome
                                                     new project".</p>
                                             </div>
                                         </div>
@@ -302,7 +268,7 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <div class="media d-flex align-items-center">
                                     <img class="avatar rounded-circle" alt="Image placeholder"
-                                        src="../../assets/img/team/profile-picture-3.jpg">
+                                        src="../../assets-admin/img-admin/team/profile-picture-3.jpg">
                                     <div class="media-body ms-2 text-dark align-items-center d-none d-lg-block">
                                         <span class="mb-0 font-small fw-bold text-gray-900">Bonnie Green</span>
                                     </div>
@@ -580,7 +546,7 @@
                                                 <!-- Avatar -->
                                                 <a href="#" class="avatar">
                                                     <img class="rounded" alt="Image placeholder"
-                                                        src="../../assets/img/team/profile-picture-1.jpg">
+                                                        src="../../assets-admin/img-admin/team/profile-picture-1.jpg">
                                                 </a>
                                             </div>
                                             <div class="col-auto ms--2">
@@ -612,7 +578,7 @@
                                                 <!-- Avatar -->
                                                 <a href="#" class="avatar">
                                                     <img class="rounded" alt="Image placeholder"
-                                                        src="../../assets/img/team/profile-picture-2.jpg">
+                                                        src="../../assets-admin/img/team/profile-picture-2.jpg">
                                                 </a>
                                             </div>
                                             <div class="col-auto ms--2">
@@ -644,7 +610,7 @@
                                                 <!-- Avatar -->
                                                 <a href="#" class="avatar">
                                                     <img class="rounded" alt="Image placeholder"
-                                                        src="../../assets/img/team/profile-picture-3.jpg">
+                                                        src="../../assets-admin/img/team/profile-picture-3.jpg">
                                                 </a>
                                             </div>
                                             <div class="col-auto ms--2">
@@ -676,7 +642,7 @@
                                                 <!-- Avatar -->
                                                 <a href="#" class="avatar">
                                                     <img class="rounded" alt="Image placeholder"
-                                                        src="../../assets/img/team/profile-picture-4.jpg">
+                                                        src="../../assets-admin/img/team/profile-picture-4.jpg">
                                                 </a>
                                             </div>
                                             <div class="col-auto ms--2">
@@ -716,8 +682,8 @@
                                 <!-- Project 1 -->
                                 <div class="row mb-4">
                                     <div class="col-auto">
-                                        <svg class="icon icon-sm text-gray-500" fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="icon icon-sm text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
                                             <path fill-rule="evenodd"
                                                 d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"
@@ -741,8 +707,8 @@
                                 <!-- Project 2 -->
                                 <div class="row align-items-center mb-4">
                                     <div class="col-auto">
-                                        <svg class="icon icon-sm text-gray-500" fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="icon icon-sm text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
                                             <path fill-rule="evenodd"
                                                 d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"
@@ -766,8 +732,8 @@
                                 <!-- Project 3 -->
                                 <div class="row align-items-center mb-4">
                                     <div class="col-auto">
-                                        <svg class="icon icon-sm text-gray-500" fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="icon icon-sm text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
                                             <path fill-rule="evenodd"
                                                 d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"
@@ -791,8 +757,8 @@
                                 <!-- Project 4 -->
                                 <div class="row align-items-center mb-3">
                                     <div class="col-auto">
-                                        <svg class="icon icon-sm text-gray-500" fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="icon icon-sm text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
                                             <path fill-rule="evenodd"
                                                 d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"
@@ -821,26 +787,19 @@
             <div class="col-12 col-xl-4">
                 <div class="col-12 px-0 mb-4">
                     <div class="card shadow border-0 text-center p-0">
-                        <div class="profile-cover rounded-top" data-background="../../assets/img/profile-cover.jpg"
-                            style="background: url(&quot;../../assets/img/profile-cover.jpg&quot;);"></div>
+                        <div class="profile-cover rounded-top" data-background="../../assets-admin/img/profile-cover.jpg" style="background: url(&quot;../../assets/img/profile-cover.jpg&quot;);"></div>
                         <div class="card-body pb-5">
-                            <img src="../../assets/img/team/profile-picture-1.jpg"
-                                class="avatar-xl rounded-circle mx-auto mt-n7 mb-4" alt="Neil Portrait">
+                            <img src="../../assets-admin/img/team/profile-picture-1.jpg" class="avatar-xl rounded-circle mx-auto mt-n7 mb-4" alt="Neil Portrait">
                             <h4 class="h3">Neil Sims</h4>
                             <h5 class="fw-normal">Senior Software Engineer</h5>
                             <p class="text-gray mb-4">New York, USA</p>
                             <a class="btn btn-sm btn-gray-800 d-inline-flex align-items-center me-2" href="#">
-                                <svg class="icon icon-xs me-1" fill="currentColor" viewBox="0 0 20 20"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M8 9a3 3 0 100-6 3 3 0 000 6zM8 11a6 6 0 016 6H2a6 6 0 016-6zM16 7a1 1 0 10-2 0v1h-1a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V7z">
-                                    </path>
-                                </svg>
+                                <svg class="icon icon-xs me-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8 9a3 3 0 100-6 3 3 0 000 6zM8 11a6 6 0 016 6H2a6 6 0 016-6zM16 7a1 1 0 10-2 0v1h-1a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V7z"></path></svg>
                                 Connect
                             </a>
                             <a class="btn btn-sm btn-secondary" href="#">Send Message</a>
                         </div>
-                    </div>
+                     </div>
                 </div>
                 <div class="col-12 px-0 mb-4">
                     <div class="card border-0 shadow">
@@ -882,8 +841,8 @@
                                     </div>
                                     <div class="small card-stats">
                                         United States
-                                        <svg class="icon icon-xs text-success" fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="icon icon-xs text-success" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd"
                                                 d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
                                                 clip-rule="evenodd"></path>
@@ -918,8 +877,8 @@
                                     </div>
                                     <div class="small card-stats">
                                         Computers Electronics > Technology
-                                        <svg class="icon icon-xs text-success" fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="icon icon-xs text-success" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd"
                                                 d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
                                                 clip-rule="evenodd"></path>
@@ -951,8 +910,7 @@
                             <div class="d-block">
                                 <div class="d-flex align-items-center me-5">
                                     <div class="icon-shape icon-sm icon-shape-danger rounded me-3">
-                                        <svg fill="currentColor" viewBox="0 0 20 20"
-                                            xmlns="http://www.w3.org/2000/svg">
+                                        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd"
                                                 d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11 4a1 1 0 10-2 0v4a1 1 0 102 0V7zm-3 1a1 1 0 10-2 0v3a1 1 0 102 0V8zM8 9a1 1 0 00-2 0v2a1 1 0 102 0V9z"
                                                 clip-rule="evenodd"></path>
@@ -965,8 +923,7 @@
                                 </div>
                                 <div class="d-flex align-items-center pt-3">
                                     <div class="icon-shape icon-sm icon-shape-purple rounded me-3">
-                                        <svg fill="currentColor" viewBox="0 0 20 20"
-                                            xmlns="http://www.w3.org/2000/svg">
+                                        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z">
                                             </path>
@@ -988,8 +945,7 @@
             <div class="row">
                 <div class="col-12 col-md-4 col-xl-6 mb-4 mb-md-0">
                     <p class="mb-0 text-center text-lg-start">© 2019-<span class="current-year"></span> <a
-                            class="text-primary fw-normal" href="https://themesberg.com"
-                            target="_blank">Themesberg</a>
+                            class="text-primary fw-normal" href="https://themesberg.com" target="_blank">Themesberg</a>
                     </p>
                 </div>
                 <div class="col-12 col-md-8 col-xl-6 text-center text-lg-start">
@@ -1014,11 +970,9 @@
     </main>
 
     <!-- Core -->
-    <script src="{{ asset('assets-admin/vendor/@popperjs/core/dist/umd/popper.min.js') }}"></script>
-    <script src="{{ asset('assets-admin/vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
-
-    <!-- Vendor JS -->
-    <script src="{{ asset('assets-admin/vendor/onscreen/dist/on-screen.umd.min.js') }}"></script>
+    <script src="{{asset('assets-admin/vendor/@popperjs/core/dist/umd/popper.min.js')}}"></script>
+    <script src="{{asset('assets-admin/vendor/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('assets-admin/asset-admin/vendor/onscreen/dist/on-screen.umd.min.js')}}"></script>
 </body>
 
 </html>
